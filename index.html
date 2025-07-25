@@ -6,6 +6,15 @@
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 </style>
+  <style>
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spin-infinite {
+      animation: spin-slow 4s linear infinite;
+    }
+  </style>
 <link rel="stylesheet" href="style/font.css">
   <title>flower-market</title>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -50,7 +59,7 @@
         ALWAYS <span class="text-orange-500">FRESH</span><br />
         <span class="text-orange-500">FLOWERS</span>
       </h1>
-      <p class="text-gray-600 me-">
+      <p class="md:text-[14px] font-normal text-gray-600 me-">
         Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
       </p>
     </div>
@@ -63,15 +72,15 @@
 
   <!-- Our Plants Section -->
   <section class="text-center px-6 md:px-20 py-12">
-    <h2 class="text-2xl md:text-3xl font-bold mb-2">
+    <h2 class="text-56px md:text-3xl font-bold mb-2">
       <span class="text-orange-500">Our</span> Plants
     </h2>
-    <p class="text-gray-600 max-w-xl mx-auto mb-10">
+    <p class="md:text-[14px] font-normal max-w-xl mx-auto mb-10 md:text-14px">
       Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
     </p>
 
     <!-- Grid Cards -->
-   <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
       <!-- 8 Cards with unique alert toggle -->
       <!-- Card Template -->
       <!-- Repeat this block 8 times with alert1, alert2,...alert8 -->
@@ -88,84 +97,14 @@
           Flower Added to Cart
         </div>
       </div>
+
+      <!-- CARD 2 -->
       <div class="bg-white rounded-lg shadow p-4 text-center">
         <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
         <h3 class="font-semibold text-lg">Lily Blossom</h3>
         <p class="text-gray-700 font-medium mb-3">20 USD</p>
-        <input type="checkbox" id="alert1" class="hidden peer" />
-        <label for="alert1" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
-          ADD TO CART
-        </label>
-        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
-          Flower Added to Cart
-        </div>
-      </div>
-      <div class="bg-white rounded-lg shadow p-4 text-center">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
-        <h3 class="font-semibold text-lg">Lily Blossom</h3>
-        <p class="text-gray-700 font-medium mb-3">20 USD</p>
-        <input type="checkbox" id="alert1" class="hidden peer" />
-        <label for="alert1" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
-          ADD TO CART
-        </label>
-        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
-          Flower Added to Cart
-        </div>
-      </div>
-      <div class="bg-white rounded-lg shadow p-4 text-center">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
-        <h3 class="font-semibold text-lg">Lily Blossom</h3>
-        <p class="text-gray-700 font-medium mb-3">20 USD</p>
-        <input type="checkbox" id="alert1" class="hidden peer" />
-        <label for="alert1" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
-          ADD TO CART
-        </label>
-        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
-          Flower Added to Cart
-        </div>
-      </div>
-      <div class="bg-white rounded-lg shadow p-4 text-center">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
-        <h3 class="font-semibold text-lg">Lily Blossom</h3>
-        <p class="text-gray-700 font-medium mb-3">20 USD</p>
-        <input type="checkbox" id="alert1" class="hidden peer" />
-        <label for="alert1" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
-          ADD TO CART
-        </label>
-        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
-          Flower Added to Cart
-        </div>
-      </div>
-      <div class="bg-white rounded-lg shadow p-4 text-center">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
-        <h3 class="font-semibold text-lg">Lily Blossom</h3>
-        <p class="text-gray-700 font-medium mb-3">20 USD</p>
-        <input type="checkbox" id="alert1" class="hidden peer" />
-        <label for="alert1" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
-          ADD TO CART
-        </label>
-        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
-          Flower Added to Cart
-        </div>
-      </div>
-      <div class="bg-white rounded-lg shadow p-4 text-center">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
-        <h3 class="font-semibold text-lg">Lily Blossom</h3>
-        <p class="text-gray-700 font-medium mb-3">20 USD</p>
-        <input type="checkbox" id="alert1" class="hidden peer" />
-        <label for="alert1" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
-          ADD TO CART
-        </label>
-        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
-          Flower Added to Cart
-        </div>
-      </div>
-      <div class="bg-white rounded-lg shadow p-4 text-center">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
-        <h3 class="font-semibold text-lg">Lily Blossom</h3>
-        <p class="text-gray-700 font-medium mb-3">20 USD</p>
-        <input type="checkbox" id="alert1" class="hidden peer" />
-        <label for="alert1" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
+        <input type="checkbox" id="alert2" class="hidden peer" />
+        <label for="alert2" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
           ADD TO CART
         </label>
         <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
@@ -173,8 +112,177 @@
         </div>
       </div>
 
+      <!-- CARD 3 -->
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
+        <h3 class="font-semibold text-lg">Lily Blossom</h3>
+        <p class="text-gray-700 font-medium mb-3">20 USD</p>
+        <input type="checkbox" id="alert3" class="hidden peer" />
+        <label for="alert3" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
+          ADD TO CART
+        </label>
+        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
+          Flower Added to Cart
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
+        <h3 class="font-semibold text-lg">Lily Blossom</h3>
+        <p class="text-gray-700 font-medium mb-3">20 USD</p>
+        <input type="checkbox" id="alert4" class="hidden peer" />
+        <label for="alert4" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
+          ADD TO CART
+        </label>
+        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
+          Flower Added to Cart
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
+        <h3 class="font-semibold text-lg">Lily Blossom</h3>
+        <p class="text-gray-700 font-medium mb-3">20 USD</p>
+        <input type="checkbox" id="alert5" class="hidden peer" />
+        <label for="alert5" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
+          ADD TO CART
+        </label>
+        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
+          Flower Added to Cart
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
+        <h3 class="font-semibold text-lg">Lily Blossom</h3>
+        <p class="text-gray-700 font-medium mb-3">20 USD</p>
+        <input type="checkbox" id="alert6" class="hidden peer" />
+        <label for="alert6" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
+          ADD TO CART
+        </label>
+        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
+          Flower Added to Cart
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
+        <h3 class="font-semibold text-lg">Lily Blossom</h3>
+        <p class="text-gray-700 font-medium mb-3">20 USD</p>
+        <input type="checkbox" id="alert7" class="hidden peer" />
+        <label for="alert7" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
+          ADD TO CART
+        </label>
+        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
+          Flower Added to Cart
+        </div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="bg-white rounded-lg shadow p-4 text-center">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="mx-auto mb-4 rounded-md" />
+        <h3 class="font-semibold text-lg">Lily Blossom</h3>
+        <p class="text-gray-700 font-medium mb-3">20 USD</p>
+        <input type="checkbox" id="alert8" class="hidden peer" />
+        <label for="alert8" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer block">
+          ADD TO CART
+        </label>
+        <div class="mt-3 hidden peer-checked:block bg-green-100 text-green-800 text-sm rounded-md px-3 py-2">
+          Flower Added to Cart
+        </div>
+      </div>
+    </div>
       
     </div>
   </section>
+  <!-- Plants Lover Section -->
+  <section class="px-6 md:px-20 py-12">
+    <div class="flex flex-col md:flex-row items-start gap-8">
+      
+      <!-- Left: Image with Badge -->
+      <div class="relative w-full md:w-1/2">
+        <img 
+          src="assets/flower-store.png" 
+          alt="Plants Lover" 
+          class="w-full rounded-md"
+        />
+
+        <!-- Trusted Badge (hidden on mobile) -->
+       <div class="absolute -top-6 -right-6 md:-right-20 md:-top-20">
+        <img src="assets/trusted-badge.png" alt="Trusted Seller Badge" class="w-24 md:w-70 spin-infinite" />
+      </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="w-full md:w-1/2 text-left space-y-5 md:mt-10 md:pl-15">
+        <h2 class=" md:text-4xl md:text-5xl font-bold">
+          Flower & Plants Lover
+        </h2>
+        <ul class="md:text-16xl  font-normal list-disc pl-5 text-gray-400 space-y-2">
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+          </li>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+          </li>
+          <li>
+            Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Latest Deals Section -->
+ <!-- Latest Deals Section -->
+  <section class="max-w-6xl mx-auto">
+<div class="text-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-bold">
+      <span class="text-orange-500">Latest</span> <span class="text-gray-900">Deals</span>
+    </h2>
+    <p class="mt-4 font-normal text-gray-500 max-w-xl mx-auto text-sm md:text-base px-12">
+      Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+    </p>
+  </div>
+
+  <!-- Deals Grid -->
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 ml-4 mr-4">
+    
+    <!-- Left Column -->
+    <div class="space-y-6 md:col-span-1">
+      <!-- Card 1 -->
+      <div class="relative rounded-xl overflow-hidden">
+        <img src="assets/deal-bloom.png" alt="Bloom Plant" class="w-full h-48 md:h-40 object-cover" />
+        <div class="absolute inset-0 bg-opacity-30 flex flex-col justify-center items-center text-white text-center px-4">
+          <p class="text-lg font-semibold">60% Off | Bloom Plant</p>
+          <a href="" class=" underline text-sm">Shop Now</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="relative rounded-xl overflow-hidden col-span-2">
+        <img src="assets/deal-ana.png" alt="Ana Plant" class="w-full h-48 md:h-40 object-cover" />
+        <div class="absolute inset-0 bg-opacity-30 flex flex-col justify-center items-center text-white text-center px-4">
+          <p class="text-lg font-semibold">30% Off | Ana Plant</p>
+          <a href="" class="underline text-sm">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="grid relative rounded-xl overflow-hidden md:col-span-2">
+      <img src="assets/deal-zabo.png" alt="Zabo Plant" class="" />
+      <div class="absolute inset-0 bbg-opacity-30 flex flex-col justify-center items-center text-white text-center px-4">
+        <p class="text-2xl font-semibold">25% Off | Zabo Plant</p>
+        <a href="" class=" underline text-base">Shop Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  </section>
+
 </body>
 </html>
