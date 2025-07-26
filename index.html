@@ -236,8 +236,9 @@
 
  <!-- Latest Deals Section -->
   <section class="max-w-6xl mx-auto mt-20">
-<div class="text-center mb-10">
-    <h2 class="md:text-5xl md:text-4xl font-bold">
+  <!-- Section Header -->
+  <div class="text-center mb-10">
+    <h2 class="md:text-5xl text-4xl font-bold">
       <span class="text-orange-500">Latest</span> <span class="text-gray-900">Deals</span>
     </h2>
     <p class="mt-4 font-normal text-gray-500 max-w-xl mx-auto text-sm md:text-base px-12">
@@ -246,40 +247,49 @@
   </div>
 
   <!-- Deals Grid -->
-  <div class=" grid grid-cols-1 md:grid-cols-3 gap-6 ml-4 mr-4">
-    
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ml-4 mr-4">
+
     <!-- Left Column -->
     <div class="space-y-6 md:col-span-1">
+
       <!-- Card 1 -->
       <div class="relative rounded-xl overflow-hidden">
         <img src="assets/deal-bloom.png" alt="Bloom Plant" class="w-full h-48 md:h-40 object-cover" />
-        <div class="absolute inset-0 bg-opacity-30 flex flex-col justify-center items-center text-white text-center px-4">
+        <!-- Fixed Overlay -->
+        <div class="absolute inset-0" style="background: rgba(0,0,0,0.3);"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
           <p class="text-lg font-semibold">60% Off | Bloom Plant</p>
-          <a href="" class=" underline text-sm">Shop Now</a>
+          <a href="#" class="underline text-sm">Shop Now</a>
         </div>
       </div>
+
       <!-- Card 2 -->
-      <div class="relative rounded-xl overflow-hidden col-span-2">
+      <div class="relative rounded-xl overflow-hidden">
         <img src="assets/deal-ana.png" alt="Ana Plant" class="w-full h-48 md:h-40 object-cover" />
-        <div class="absolute inset-0 bg-opacity-30 flex flex-col justify-center items-center text-white text-center px-4">
+        <!-- Fixed Overlay -->
+        <div class="absolute inset-0" style="background: rgba(0,0,0,0.3);"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
           <p class="text-lg font-semibold">30% Off | Ana Plant</p>
-          <a href="" class="underline text-sm">Shop Now</a>
+          <a href="#" class="underline text-sm">Shop Now</a>
         </div>
       </div>
+
     </div>
 
     <!-- Right Column -->
     <div class="md:h-86 grid relative rounded-xl overflow-hidden md:col-span-2">
-      <img src="assets/deal-zabo.png" alt="Zabo Plant" class="" />
-      <div class="absolute inset-0 bbg-opacity-30 flex flex-col md:mt-40 items-center text-white md:text-center px-4">
-        <p class="mt-20 lg:mt-3 text-lg lg:text-3xl font-semibold">25% Off | Zabo Plant</p>
-        <a href="" class=" underline md:text-base">Shop Now</a>
+      <img src="assets/deal-zabo.png" alt="Zabo Plant" class="w-full h-full object-cover" />
+      <!-- Fixed Overlay -->
+      <div class="absolute inset-0" style="background: rgba(0,0,0,0.3);"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+        <p class="text-lg lg:text-3xl font-semibold">25% Off | Zabo Plant</p>
+        <a href="#" class="underline md:text-base mt-2">Shop Now</a>
       </div>
     </div>
 
   </div>
+</section>
 
-  </section>
   <!-- Hero Section -->
    
   <section class="mt-20 relative bg-cover bg-center h-[60vh] flex items-center justify-center" style="background-image: url(assets/news-letter-bg.png);">
